@@ -13,7 +13,8 @@ export class HomePage {
   }
 
   onClickCal(Set,Plus) {
-    // let respones = await<any> this.http.get(https://nextflow-node-calculator-api.azurewebsites.net/calculator/plus)
+    let url = "https://nextflow-node-calculator-api.azurewebsites.net/calculator/plus"
+    let respones = await<any> this.http.post(https://nextflow-node-calculator-api.azurewebsites.net/calculator/plus)
     console.log('Set',Set,'Plus',Plus);
   }
 

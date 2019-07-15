@@ -10,17 +10,17 @@
   <!-- ตัวตั้ง -->
   <ion-item>
     <ion-label>ตัวตั้ง</ion-label>
-    <ion-input [(ngModel)]="Set"></ion-input>
+    <ion-input type="number" [(ngModel)]="Set"></ion-input>
   </ion-item>
   <!-- ตัวบวก -->
   <ion-item>
     <ion-label>ตัวบวก</ion-label>
-    <ion-input [(ngModel)]="Plus"></ion-input>
+    <ion-input type="number" [(ngModel)]="Plus"></ion-input>
   </ion-item>
 <!-- ผลลัพย์ -->
   <ion-item>
     <ion-label>ผลลัพย์</ion-label>
-    <ion-input ></ion-input>
+    <ion-input value="{{response}}"></ion-input>
   </ion-item>
   <ion-button expand="block" (click)="onClickCal(Set,Plus)">
     คำนวณ

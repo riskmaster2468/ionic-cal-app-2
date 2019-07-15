@@ -15,9 +15,9 @@ export class HomePage {
   async onClickCal(Set,Plus) {
     let url = "https://nextflow-node-calculator-api.azurewebsites.net/calculator/plus";
     
-    let response = await<any> this.http.post(url,{}).toPromise();
+    let response = await<any> this.http.post(url,{ "first" : parseInt(Set), "second": parseInt(Plus) }).toPromise();
 
-    // console.log('Set',Set,'Plus',Plus);
+    console.log('Set',Set,'Plus',Plus,'response',response);
   }
 
 }
